@@ -1,0 +1,3 @@
+rootProject.name = 'tsapp2'
+
+include ':app'
