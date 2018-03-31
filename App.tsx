@@ -10,6 +10,7 @@ import * as React from "react";
 import { Component } from "react";
 import { Platform, StyleSheet, Text, Image, View } from "react-native";
 import HelloWorldApp from "./src/Hello1";
+import TextInputComponent from "./src/hello2";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -30,7 +31,8 @@ export default class App extends React.Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native12345</Text>
-        <HelloWorldApp name="Amy " />
+        <TextInputComponent />
+        <HelloWorldApp name="Amy12346 " />
         <Image
           style={{ alignSelf: "center", height: 50, width: 50 }}
           source={pic}
@@ -47,9 +49,9 @@ export default class App extends React.Component<Props> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#000FFF"
+    //justifyContent: "center",
+   // alignItems: "center",
+    backgroundColor: "#FFF"
   },
   welcome: {
     flex:1,
