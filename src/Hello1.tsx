@@ -20,8 +20,8 @@ export default class HelloWorldApp extends Component<IHelloFormProps, any> {
   render() {
     let display = this.state.showText ? this.props.name : " ";
     return (
-      <View style={{backgroundColor: 'blue'}}>
-        <Text style={styles.red}>Hello {this.props.name}</Text>
+      <View style={{flex: 1, height:100, backgroundColor: 'blue'}}>
+        <Text style={ styles.red}>Hello {this.props.name}</Text>
         <Text style={styles.bigblue}>Hello {display}</Text>
       </View>
     );

@@ -52,16 +52,20 @@ const styles = StyleSheet.create({
     backgroundColor: "#F5FCFF"
   },
   welcome: {
+    flex:1,
     fontSize: 20,
     textAlign: "center",
     margin: 10
   },
   instructions: {
+    flex:1,
+    
     textAlign: "center",
     color: "#333333",
     marginBottom: 5
   },
   stretch: {
+    flex:1,
     alignSelf: "center"
   }
 });
