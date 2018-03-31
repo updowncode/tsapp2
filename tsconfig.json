@@ -2,9 +2,9 @@
     "compilerOptions": {
         "target": "es2015",
         "jsx": "react",
-        "noEmit": true,
+        "noEmit": false,
         "moduleResolution": "node",
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "baseUrl": "."
     },
     "exclude": [
