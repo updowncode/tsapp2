@@ -20,7 +20,14 @@ export default class HelloWorldApp extends Component<IHelloFormProps, any> {
   render() {
     let display = this.state.showText ? this.props.name : "Eric";
     return (
-      <View>
+      <View style={{
+        flex: 1,
+        flexDirection: "row",
+        //justifyContent: "flex-start",
+        //alignItems: "stretch",
+       // height: 50,
+        backgroundColor: "blue"
+      }}>
         <View
           style={{
             flex: 1,
@@ -34,7 +41,7 @@ export default class HelloWorldApp extends Component<IHelloFormProps, any> {
           <Text style={styles.red}>Hello {this.props.name}</Text>
           <Text style={styles.bigblue}>Hello {display}</Text>
         </View>
-        <View
+        {/* <View
           style={{
             flex: 1,
             flexDirection: "column",
@@ -49,7 +56,7 @@ export default class HelloWorldApp extends Component<IHelloFormProps, any> {
           <View
             style={{ width: 50, height: 50, backgroundColor: "steelblue" }}
           />
-        </View>
+        </View> */}
       </View>
     );
   }
