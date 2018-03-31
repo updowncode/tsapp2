@@ -11,6 +11,7 @@ import {
   Platform,
   StyleSheet,
   Text,
+  Image,
   View
 } from 'react-native';
 import Hello from './src/Hello';
@@ -21,21 +22,26 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
-
+let pic = ({
+  uri : 'https://b2b.toureast.com/content/images/te-logo.png'
+});
 interface Props {};
 export default class App extends React.Component<Props> {
   constructor(props:any){
     super(props);
   }
-  render() {
+    render() {
     return (
   
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native1234
-          
+          Welcome to React Native12345
         </Text>
-        
+        <Image  style={{ alignSelf: 'center', height: 50, width: 50}}  source={pic} resizeMode="stretch" />
+        <Image
+          style={styles.stretch}
+          source={require('./src/te-logo.png')}
+        />
         <Text style={styles.instructions}>
           To get started, edit App.tsx
         </Text>
@@ -64,4 +70,7 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  stretch:{
+    alignSelf:'center'
+  }
 });
