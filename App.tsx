@@ -30,7 +30,7 @@ export default class App extends React.Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to React Native12345</Text>
-        <HelloWorldApp name="world888" />
+        <HelloWorldApp name="Amy " />
         <Image
           style={{ alignSelf: "center", height: 50, width: 50 }}
           source={pic}
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#F5FCFF"
+    backgroundColor: "#000FFF"
   },
   welcome: {
     flex:1,
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     flex:1,
     
     textAlign: "center",
-    color: "#333333",
+    color: "#FFF000",
     marginBottom: 5
   },
   stretch: {

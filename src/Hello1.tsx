@@ -18,7 +18,7 @@ export default class HelloWorldApp extends Component<IHelloFormProps, any> {
   }
 
   render() {
-    let display = this.state.showText ? this.props.name : " ";
+    let display = this.state.showText ? this.props.name : "Eric";
     return (
       <View style={{flex: 1, height:100, backgroundColor: 'blue'}}>
         <Text style={ styles.red}>Hello {this.props.name}</Text>
@@ -29,7 +29,7 @@ export default class HelloWorldApp extends Component<IHelloFormProps, any> {
 }
 const styles = StyleSheet.create({
     bigblue: {
-      color: 'white',
+      color: '#19d5db',
       fontWeight: 'bold',
       fontSize: 30,
     },
