@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Component } from "react";
-import { View, Text } from "react-native";
+import { View, StyleSheet, Text } from "react-native";
 interface IHelloFormProps {
   name: string;
   //handleChange(event: any): void;
@@ -20,10 +20,20 @@ export default class HelloWorldApp extends Component<IHelloFormProps, any> {
   render() {
     let display = this.state.showText ? this.props.name : " ";
     return (
-      <View>
-        <Text>Hello {this.props.name}</Text>
-        <Text>Hello {display}</Text>
+      <View style={{backgroundColor: 'blue'}}>
+        <Text style={styles.red}>Hello {this.props.name}</Text>
+        <Text style={styles.bigblue}>Hello {display}</Text>
       </View>
     );
   }
 }
+const styles = StyleSheet.create({
+    bigblue: {
+      color: 'white',
+      fontWeight: 'bold',
+      fontSize: 30,
+    },
+    red: {
+      color: 'red',
+    },
+  });
