@@ -4,12 +4,19 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start --config ../../../../rn-cli.config.js",
-    "test": "jest"
+    "test": "jest",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios"
   },
   "dependencies": {
     "@babel/core": "^7.0.0-beta.38",
     "react": "16.3.0-alpha.1",
-    "react-native": "0.54.3"
+    "react-native": "0.54.3",
+    "react-native-button": "^2.3.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.3.0",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "@types/jest": "22.2.2",
@@ -22,6 +29,7 @@
     "react-native-typescript-transformer": "1.2.3",
     "react-test-renderer": "16.3.0-alpha.1",
     "ts-jest": "22.4.2",
+    "tslint": "^5.9.1",
     "typescript": "2.8.1"
   },
   "jest": {

@@ -1,5 +1,5 @@
 {
     "eslint.enable": false,
     "editor.minimap.enabled": false,
-    "vs-color-picker.autoLaunch":true
+    "explorer.openEditors.visible": 0
 }

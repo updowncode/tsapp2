@@ -1,26 +1,28 @@
 import * as React from "react";
-import { View, StyleSheet, Text, TextInput } from "react-native";
+import { StyleSheet, Text, TextInput, View } from "react-native";
 
-export interface AppProps {}
+export interface IAppProps {
+  name?: string;
+}
 
-export default class TextInputComponent extends React.Component<AppProps, any> {
+export default class TextInputComponent extends React.Component<IAppProps, any> {
   constructor(props) {
     super(props);
     this.state = { text: "" };
   }
-  render() {
+  public render() {
     return (
       <View>
         <TextInput
           style={styles.blue}
-          underlineColorAndroid='transparent'
+          underlineColorAndroid="transparent"
           placeholder="Type here to translate me!"
-          onChangeText={text => this.setState({ text })}
+          onChangeText={(text) => this.setState({ text })}
         />
-        <Text style={{width:100, padding: 10, fontSize: 42 }}>
+        <Text style={{width: 100, padding: 10, fontSize: 42 }}>
           {this.state.text
             .split(" ")
-            .map(word => word && "🍕🍕🍕🍕🍕🍕🍕🍕🍕")
+            .map((word) => word && "🍕")
             .join(" ")}
         </Text>
       </View>
@@ -30,17 +32,16 @@ export default class TextInputComponent extends React.Component<AppProps, any> {
 
 const styles = StyleSheet.create({
   blue: {
+    borderWidth: 1,
     color: "#0000FF",
    // height: 40,
+   padding: 0,
     width: 200,
-    borderWidth: 1,
-    padding: 0,
-    
   },
   container: {
+    alignItems: "center",
+    backgroundColor: "#FFF",
     flex: 1,
     justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#FFF"
-  }
+ },
 });
